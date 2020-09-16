@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyC4IjXS6UAga5naujPhhS5_lUeJrsGsq_k",
+        authDomain: "test-2e7a4.firebaseapp.com",
+        databaseURL: "https://test-2e7a4.firebaseio.com",
+        projectId: "test-2e7a4",
+        storageBucket: "test-2e7a4.appspot.com",
+        messagingSenderId: "24470551670",
+        appId: "1:24470551670:web:3e61f8d102a51a6a50f357",
+        measurementId: "G-G74F0RXZFS"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
+    var db = firebase.firestore();
+</script>
+<body>
+    <form action="" id="formAdd">
+        <label for="">Tên Sách</label>
+        <input type="text" name="book">
+        <label for="">Tác Giả</label>
+        <input type="text" name="name">
+        <button type="submit">add</button>
+        <div id="list">
+
+        </div>
+    </form>
+    
+</body>
+    <template id="book">
+        <link rel="stylesheet" href="style.css">
+        <div id="container">
+            <div class="d-flex border rounded">
+                <p id="nameBook"></p>
+                <small id="displayName"></small>
+            </div>
+        </div>
+    </template>
+<script type="module" src="./index.js"></script>
+</html>

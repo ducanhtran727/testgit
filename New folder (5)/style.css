@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+.d-flex{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    /* display: inline; */
+}
+/* .border {
+    border: 1px solid lightgray;
+
+}
+.rounded{
+    border-radius: 10px;
+} */
